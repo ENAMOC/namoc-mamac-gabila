@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&family=Raleway:wght@300&family=Young+Serif&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+ background: url("..//Image/Profilefit2.jpeg") no-repeat; 
+  background-position: center ;
+  background-size: cover;
+  
+}
+
+
+#background-video {
+  height: auto;
+  width: 100%;
+  background: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 20px;
+  bottom: 0;
+  z-index: -1;
+
+}
+
+.logo img {
+  width: 200px;
+padding: 2px;
+}
+
+.wrapper {
+  background:white;
+  color: black;
+  width:420px;
+  border-radius: 10px;
+  padding: 30px 40px ;
+  background: transparent;
+  color: white;
+  border: 2px;
+  backdrop-filter: blur(15px);
+  
+}
+.wrapper .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+
+}
+.wrapper h1{
+  font-size: 36px;
+  text-align: center;
+  color: black;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  border-color:pink;
+  background:peachpeachpuff;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 40px;
+  font-size: 16px;
+  color:teal;
+  padding: 20px 40px 20px 20px;
+
+}
+
+.input-box input::placeholder {
+  color: teal;
+
+}
+
+
+.input-box i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+.wrapper .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+
+}
+
+.remember-forgot label input {
+  accent-color: #fff;
+  margin-right: 3px;
+
+}
+
+.remember-forgot a {
+  color: blue;
+  text-decoration: none;
+
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+
+.wrapper .btn {
+  height: 45px;
+  width: 100%;
+  background: #fff;
+  border: #fff;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
+
+.wrapper .register-link {
+  font-size: 14.5px;
+  text-align: center;
+  margin-top: 20px;
+
+}
+
+.register-link p a {
+  color: blue;
+  text-decoration: none;
+  font-weight: 600;
+
+}
+
+.register-link p a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+/* mobile responsive */
+
+@media (max-width: 767px) {
+
+  
+.wrapper {
+  background:white;
+  color: black;
+  width:100%;
+  border-radius: 10px;
+  padding: 30px 40px;
+  margin-top: 25vh;
+  background: transparent;
+  color: white;
+  border: 2px;
+  backdrop-filter: blur(15px);
+  
+}
+
+
+
+
+}
