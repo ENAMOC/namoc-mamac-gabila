@@ -1,9 +1,8 @@
-
 * {
     padding: 0;
     margin:0;
   list-style:  none;
-    box-sizing: border-box;
+box-sizing: border-box;
     font-family: 'Josepfin Sans', sans-serif;
   
 }
@@ -15,7 +14,8 @@
   z-index: 1000;
   width: 100%;
   background: transparent;
-  padding: 27px 17%;
+ padding: px ; /* 27px*/
+ padding: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -208,18 +208,16 @@ header.sticky {
 
 
 .home {
-  position: relative;
-  height: 90vh;
+  position:relative;
+  height: 100vh;
   width: 100%;
   /*background-size: cover; */
   background-size:cover;
   background-repeat:no-repeat;
- /* background-image: url("../Image/Profile3.png");*/
-  background-position: bottom center;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-
+ background-image:url('../Bagsphoto/Kendall.jpg');
+ display: flex;
+ align-items: center;
+ justify-content: flex-start;
 }
 
 
@@ -357,130 +355,142 @@ font-size:15px;
 /*======= Starts Here =======*/
 
 
-#mySidenav a {
+/*body {
+  background-image: url('/Image/Paintingprofile.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
 
-    right: -60px;
-    color: white;
-    width: 140px;
-    padding: 15px;
-    position: absolute;
-    transition: 0.3s;
-    font-size: 20px;
-    text-decoration: none;
-    border-radius: 5px 0 0 5px;
-  }
-  #mySidenav a:hover {
-    right:0;
-    color:black;
-  }
-  
-  #return {
-    top: 20px;
-    background-color: rgb(185, 141, 93);
-  }
-  #style {
-    top: 90px;
-    background-color: rgb(245, 170, 100);
-  }
-  #Tourist {
-    top: 160px;
-    background-color: rgb(252, 180, 122);
-  }
-  #Food {
-    top: 230px;
-    background-color: rgb(255, 197, 149);
-  } 
-    /*-------------- BAGS NAVIGATION CATEGORY ENDS HERE --------------*/
+}
+*/
 
-    /*-------------- BAGS PAGE TITLE STARTS HERE --------------*/
-
-.bags-title{
-    color:rgb(255, 208, 167);
-    text-shadow: 3px 3px  rgb(196, 119, 75);
-    display: flex;
-    justify-content: center;
-    font-size: 4rem;
-    font-style: italic;
-    font-weight: bold;
-    padding-top: 200px;
+.home .home-text {
+  width:100%;
+text-align: left;
+padding-top:70%;
+margin:10px;
 }
 
-    /*-------------- BAGS PAGE TITLE ENDS HERE --------------*/
-
-    /*-------------- BACKPACK IMAGES STARTS HERE --------------*/
-
-.backpacks{
-    display:grid;
-    grid-gap:5px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-columns: repeat(3, 1fr);
-    padding:6px;
-    height: 500px;
-}
-    
-.backpacks div{
-
-    justify-items:center;
-    align-items:center;
-    border-radius: 2rem;
-    object-fit:cover;
-    object-position: 1%;
-    filter: brightness(100%);
-    display:flex;
-    margin: 5%;
+.home .home-text h1{
+  font-size:6rem;
+  color: peachpuff;
+  width:100%;
+  font-weight:500;
 }
 
-h2{ /*Backpack text*/
-  color:rgb(0, 0, 0);
-  text-shadow: 3px 2px  rgb(255, 193, 158);
+
+.home .home-text h2{
+  font-size:4rem;
+  color: palegoldenrod;
+  width:100%;
+  font-weight:400;
+  text-decoration: underline;
+}
+
+
+.content {
+padding-top:10%;
+}
+
+.content .bags .picture img{
+  width: 300px;
+  border-radius:  20px;
+  display: block;
+}
+
+.content .bags {
   display: flex;
-  justify-content:flex-start;
-  font-size: 2rem;
-  font-style: italic;
-  font-weight: bold;
-  margin-top: 10rem;
-  margin-left: 5rem;
-  margin-bottom: 1rem;
+  width: 100%;
+  justify-content:  space-between;
+  padding: 20px;
 }
 
-.small p{
-  color: black;
-  font-family: sans-serif;
+.content .bags .picture:hover {
+  opacity: 1;
 }
-.b p{
-  color: black;
-  font-weight: 300;
+.content .bags .overlay:hover {
+  opacity: 1;
+}
+.content .bags .picture{
+  position: relative;
 }
 
-.backpacks img:hover {
-  filter: brightness(100%) hue-rotate(0);
-  transform: scale(1.04);
-  cursor: pointer;
+.content .bags .picture h1{
+  font-size: large;
 }
 
 
+.content .bags .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color:transparent;
+  border-radius: 20px;
+  backdrop-filter:blur(15px);
+}
+
+.content .bags .overlay .overlay-text {
+  color: teal;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width:100%;
+  height:auto;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size:large;
+  font-weight: 500;
+}
 
 
+.bagpost {
+  width: 100%;
+  display: flex;
+  padding:20px;
+  padding-top:100px;
+  justify-content:center;
+  align-items:center;
+  align-content:  center;
+}
+
+.bagpost .image img{
+  border-radius:20px;
+  width:100%;
+}
 
 
+.bagpost .bag-posttext{
+  width:50%;
+}
 
 
+.bagpost .bag-posttext-two{
+  width:50%;
+ padding:10px;
+}
 
+.bagpost .bag-posttext h1{
+color: teal;
+font-size:2rem;
+}
 
+.bagpost .bag-posttext-two h1{
+color: teal;
+font-size:2rem;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.magazine {
+width: 100%;
+padding:10px;
+}
 
 
 
@@ -505,12 +515,6 @@ h2{ /*Backpack text*/
    font-size: 10px;
   }
   
-  .home{
-    align-content:  center;
-    padding:2px;
-    margin: 0.5rem;
-    background-size: cover;
-  }
   
   
   .content-text {
@@ -701,4 +705,54 @@ h2{ /*Backpack text*/
      display: block;
    }
   
+  .content{
+    width: 100%;
+  } 
+   
+   .content .bags .picture img{
+     width:100px;
+   }
+   
+   
+   .home .home-text h1{
+     font-size: 2rem;
+   }
+   
+      .home .home-text h2{
+     font-size: 1rem;
+   }
+   
+   .content .bags .overlay .overlay-text {
+     font-size: x-small;
+   }
+   
+   
+   .content .bags{
+     gap:2rem;
+     flex-direction:column;
+     justify-content:  center;
+     align-content:  center;
+     align-items:  center;
+   }
+   
+  .bagpost {
+    flex-direction: column;
+  }
+  
+  .bagpost .bag-posttext {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+   
+     
+  .bagpost .bag-posttext-two {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+   
+   .magazine {
+     font-size:small;
+   }
+  
+   
 }
