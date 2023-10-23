@@ -15,7 +15,8 @@
   z-index: 1000;
   width: 100%;
   background: transparent;
-  padding: 27px 17%;
+  /*padding: 27px 17%;*/
+padding: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
