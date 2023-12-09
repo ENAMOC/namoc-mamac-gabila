@@ -1,0 +1,16 @@
+* {
+    padding: 0;
+    margin:0;
+  list-style:  none;
+  text-decoration:  none;
+    box-sizing: border-box;
+    font-family: 'Josepfin Sans', sans-serif;
+  
+}
+
+
+.wrapper {
+    background:peachpuff;
+    width: 50%;
+    border-radius:20px;
+}
