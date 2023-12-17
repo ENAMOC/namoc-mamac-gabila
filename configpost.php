@@ -2,8 +2,8 @@
 
 $dbHost = 'localhost';
 $dbName = 'id21530633_nagamacproject';
-$dbUsername = 'id21530633_nagamac';
-$dbPassword = 'Namoc@120';
+$dbUsername = 'root';
+$dbPassword = '';
 $db= mysqli_connect($dbHost, $dbUsername, $dbPassword, $dbName); 
 if(mysqli_connect_errno())
 {
